@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const SearchBar = ({ onSearch }) => {
+const SearchBar = ({ onSearch}) => {
   const [city, setCity] = useState('');
 
   const handleSearch = () => {

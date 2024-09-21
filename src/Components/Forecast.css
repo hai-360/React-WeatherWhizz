@@ -1,0 +1,29 @@
+.forecast-container {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .forecast-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .forecast-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .forecast-item img {
+    width: 50px;
+  }
+  
