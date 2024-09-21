@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import SearchBar from './Components/SearchBar';
 import WeatherInfo from './Components/WeatherInfo';
+import { SpeedInsights } from "@vercel/speed-insights/react";
+
 import './App.css';
 
 const App = () => {
@@ -19,10 +21,12 @@ const App = () => {
   };
 
   return (
+    <SpeedInsights>
     <div className="app">
       <SearchBar onSearch={fetchWeather} />
       {weather && <WeatherInfo weather={weather} />}
     </div>
+    </SpeedInsights>
   );
 };
 
